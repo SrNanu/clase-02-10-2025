@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-// Importar el CSS que te hayan proporcionado para este ejercicio
-// import './Counter.css'; 
 
 const MIN_VALUE = 0;
 const MAX_VALUE = 10;
@@ -40,26 +38,29 @@ const Counter = () => {
   };
 
   return (
-    <div className="counter-container"> {/* Usar la clase del CSS adjunto */}
+
+    <div className="counter"> 
       <h2>Contador con Límites</h2>
 
-      {message && <p className="limit-message">{message}</p>}
 
-      <div className="counter-display">
+      {message && <p className="counter-message">{message}</p>}
+
+      <div className="counter-controls">
         <button 
           onClick={decrement} 
-          disabled={count === MIN_VALUE} 
+          disabled={count === MIN_VALUE}
         >
           Decrementar
         </button>
         
-        <span className="count-value">
+        
+        <span className="count-value"> 
           {count}
         </span>
         
         <button 
           onClick={increment} 
-          disabled={count === MAX_VALUE} 
+          disabled={count === MAX_VALUE}
         >
           Incrementar
         </button>

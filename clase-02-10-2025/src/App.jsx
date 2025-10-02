@@ -1,7 +1,7 @@
 import React from 'react';
-import Counter from './components/Counter'; // Asegúrate de la ruta
-// Importa el CSS que te hayan proporcionado
-// import './App.css'; 
+import Counter from './components/Counter'; 
+// Importar el archivo CSS con los estilos provistos
+import './styles/ComponentesHook.css'; 
 
 function App() {
   return (
